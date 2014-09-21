@@ -1,0 +1,72 @@
+[
+    {
+        "address": "10.0.1.67",
+        "friendlyName": "Jo Galaxy S5",
+        "deviceType": "Ping",
+        "isyVariableId": 90,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.130",
+        "friendlyName": "Xbox One",
+        "deviceType": "Ping",
+        "isyVariableId": 27,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.131",
+        "friendlyName": "Playstation 3",
+        "deviceType": "Ping",
+        "isyVariableId": 28,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.132",
+        "friendlyName": "Office TV",
+        "deviceType": "Ping",
+        "isyVariableId": 22,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.135",
+        "friendlyName": "Bedroom TV",
+        "deviceType": "Ping",
+        "isyVariableId": 29,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.136",
+        "friendlyName": "Mainfloor Chromecast",
+        "deviceType": "Ping",
+        "isyVariableId": 30,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.137",
+        "friendlyName": "Mainfloor TV",
+        "deviceType": "Ping",
+        "isyVariableId": 31,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.138",
+        "friendlyName": "Wii",
+        "deviceType": "Ping",
+        "isyVariableId": 32,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.139",
+        "friendlyName": "Basement TV",
+        "deviceType": "Ping",
+        "isyVariableId": 33,
+        "timeoutInterval": 65
+    },
+    {
+        "address": "10.0.1.140",
+        "friendlyName": "Basement Chromecast",
+        "deviceType": "Ping",
+        "isyVariableId": 34,
+        "timeoutInterval": 65
+    }
+]
