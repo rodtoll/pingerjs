@@ -1,15 +1,14 @@
 var isy = require('./isy');
 var pinger = require('./pinger');
 var config = require('./devicelist.json');
+var houseconfig = require('../houseconfig.json');
 
-var isyConnection = new isy.ISY('10.0.1.19', 'admin', 'ErgoFlat91');
+var isyConnection = new isy.ISY(houseconfig.isy.address, houseconfig.isy.username, houseconfig.isy.password);
 
 function reportdeviceState(targetInfo, found) {
     if(targetInfo.isyVariableId == 0) {
-        console.log('<><> Target: '+targetInfo.address+' ('+targetInfo.friendlyName+') State: '+found+' NO ISY VAR');
-        return
+        return;
     } else {
-        console.log('<><> Target: ' + targetInfo.address + ' (' + targetInfo.friendlyName + ') State: ' + found + ' Isy: ' + targetInfo.isyVariableId);
         var valueToSet = 0;
         if (found == true) {
             valueToSet = 1;
