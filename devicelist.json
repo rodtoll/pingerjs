@@ -1,4 +1,11 @@
 [
+    {                          
+        "address": "10.0.1.141",        
+        "friendlyName": "Rod Nexus 5",
+        "deviceType": "Ping",
+        "isyVariableId": 35,
+        "timeoutInterval": 65
+    }, 
     {
         "address": "10.0.1.67",
         "friendlyName": "Jo Galaxy S5",

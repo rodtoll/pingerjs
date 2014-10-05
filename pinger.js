@@ -19,10 +19,8 @@ var Pinger = function(targetlist, changeCallback, timeBetweenAttempts, attempts,
 
 Pinger.prototype.handlePingResult = function(error,address) {
 
-    console.log('### Ping Result. Error: '+error+' for '+address);
     var found = !error;
     var targetInfo = this.targetMap[address];
-    console.log('### Device: '+targetInfo.friendlyName);
 
     if(found == true) {
         /* If no notification has been sent yet or it is currently not present -- and we found it
@@ -32,7 +30,6 @@ Pinger.prototype.handlePingResult = function(error,address) {
             this.changeCallback(targetInfo, found);
             targetInfo.present = true;
         } else {
-            console.log('### Device found and we know it is there: '+address);
         }
 
         targetInfo.lastSeen = new Date();
@@ -43,12 +40,10 @@ Pinger.prototype.handlePingResult = function(error,address) {
             this.changeCallback(targetInfo, found);
             targetInfo.present = false;
         } else if(targetInfo.present == false) {
-            console.log('### Device not found and it is known not present: ' + address);
         } else {
             console.log('### Devide not found and is currently present: '+address)
             var currentDate = new Date();
             var dateDeltaInSeconds = (currentDate.getTime() - targetInfo.lastSeen.getTime()) / 1000;
-            console.log('### Last seen: '+dateDeltaInSeconds+' seconds ago');
             if (dateDeltaInSeconds > targetInfo.timeoutInterval) {
                 console.log('### Timeout exceeded, reporting it missing. '+address);
                 this.changeCallback(targetInfo, found);
